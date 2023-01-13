@@ -1,0 +1,69 @@
+.faq .hero{
+    min-height: 300px;
+    width: 100%;
+    background-blend-mode: color;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position:50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.faq .hero .title{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+
+}
+.faq .hero .breadcrumbs{
+    color: var(--secondary-ex-light);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.faq .left{
+    margin-left: 5vw;
+    width: 60%;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+
+
+}
+.faq .left>.title{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+.faq .left>.subtitle{
+    color: var(--secondary);
+    margin: 50px 0;
+    font-size: 1.2rem;
+}
+.accordion .title{
+    width: 100%;
+    background: var(--secondary-ex-light);
+    color: var(--secondary);
+    text-transform: uppercase;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.accordion .body{
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--secondary-ex-light);
+    color: var(--text-light);
+    overflow: hidden;
+}
+.accordion-active{
+    animation: accordion 1s ease forwards;
+}
+@keyframes accordion {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 200px;
+    }
+}
+    

@@ -1,0 +1,80 @@
+.contact-form{
+    background: #F7F7F7;
+    width: fit-content;
+    padding: 32px;
+}
+.contact-form> .subtitle{
+    color: var(--primary);
+    margin: 8px;
+    font-size: 1.2rem;
+}
+.contact-form >.title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 8px;
+}
+.contact-form .grid{
+    display: grid;
+    width: fit-content;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+.grid .input-container{
+    /* display: flex; */
+}
+.grid input{
+    width: 250px;
+    height: 40px;
+    background: white;
+    border: 1px solid #e2e2e2;
+    padding: 0 16px;
+    margin: 8px;
+}
+.comments{
+    grid-column:1/3 ;
+    min-height: 200px;
+    margin: 8px;
+    
+}
+.comments textarea{
+    resize: none;
+    width: 94%;
+    height: 200px;
+    outline: none;
+    padding: 16px;
+    border: 1px solid #e2e2e2;
+
+}
+.submit button{
+    width: 100px;
+    height: 35px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+    background: var(--primary);
+    color: white;
+
+}
+.submit button:disabled{
+    background: gray;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.input-container{
+    display: grid ;
+}
+
+.input-container input,p{
+    display: block;
+}
+.input-container span{
+    margin-left: 10px;
+    font-size: 0.7rem;
+    color:rgb(230, 0, 0);
+}
