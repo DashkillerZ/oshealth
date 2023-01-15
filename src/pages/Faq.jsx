@@ -1,4 +1,4 @@
-import Accordion from "./Accordion";
+import Accordion from "../components/Accordion";
 import "../css/faq.css";
 export default function Faq(props){
     let accordionData = [

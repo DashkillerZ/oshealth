@@ -1,15 +1,19 @@
 .slider-container{
     width: 100%;
-    height:500px;
+    height: 100%;
     position: relative;
     font-family: 'Inter', sans-serif;
-
+    
+}
+.home>.slider-container:first-child{
+    height:600px;
+    
 }
 .slider-container .slide{
     position: absolute;
     width: inherit;
     height: inherit;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -17,7 +21,7 @@
     opacity: 0;
     transition: 1s;
     background-position: 0 0 ;
-    grid-template-rows: repeat(7,50px);
+    /* grid-template-rows: repeat(7,50px); */
     background-blend-mode: color;
     background: rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -26,7 +30,7 @@
 .slider-container .slide>div{
     display: grid;
     align-items: center;
-    width: 800px;
+    max-width: 800px;
 }
 
 .slider-container .slide .title{
@@ -36,21 +40,20 @@
     font-weight: bold;
     opacity: 0;
     text-transform: uppercase;
-    grid-row: 2/3;
+    /* grid-row: 2/3; */
 
 }
-.slider-container .slide .subtitle{
+.slider-container .slide .desc{
     color:var(--secondary-ex-light);
-    top: 50%;
     margin: 20px 0;
     font-size: 1.3rem;
     line-height: 1.5rem;
     opacity: 0;
-    grid-row: 4/6;
+    /* grid-row: 4/6; */
 
 }
 .slide >div:last-child{
-    grid-row: 7/8;
+    /* grid-row: 7/8; */
     display: flex;
 
 }
@@ -108,7 +111,7 @@
 .active .title{
     animation: title 1s 1s ease forwards ;
 } 
-.active .subtitle{
+.active .desc{
     animation: title 1s 1.5s ease forwards ;
 } 
 .active .btn1{

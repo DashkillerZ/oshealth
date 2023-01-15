@@ -40,7 +40,7 @@ export default function Slider(props){
         },
         {
             src:"https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
-            title:"modern medicine",
+            title:"modern medicals",
             description:"temporibus accusantium sunt neque architecto magnam omnis eveniet modi ducimus cupiditate!temporibus accusantium sunt neque architecto magnam omni.",
             buttons:<div>
                 <a className="btn1">purchase</a>
@@ -82,7 +82,7 @@ export default function Slider(props){
                     return(
                         <div className={currentSlide===index?"slide active":"slide"} style={{backgroundImage:"url("+slide.src+")"}}  key={index}>
                             {slide.title && <div className="title">{slide.title}</div>}
-                            {slide.description && <div className="subtitle">{slide.description}</div>}
+                            {slide.description && <div className="desc">{slide.description}</div>}
                             {slide.buttons}
                             
                         </div>
