@@ -4,9 +4,8 @@
     padding-top: 0.1px;
 }
 .footer .bottom{
-    /* width: ; */
-    /* margin: 0 auto; */
     margin: 0 5vw;
+    padding: 20px 0;
     border-top: 1px solid #3a536c;
     display: flex;
     height: 40px;

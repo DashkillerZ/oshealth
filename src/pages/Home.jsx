@@ -8,6 +8,12 @@ import preciseDiagnosis from "../static/precise-diagnosis.png";
 import primaryHealthCare from "../static/primary-health-care.png";
 import rehabCenter from "../static/rehab-center.png";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { Navigation } from 'swiper';
+import 'swiper/css';
+import "swiper/css/navigation"
+
 
 export default function Home(){
     return(
@@ -48,7 +54,40 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="section2">
-                    <div className="slider"></div>
+                    <div className="slider">
+                        <Swiper
+                            modules={[Navigation]}
+                            spaceBetween={50}
+                            slidesPerView={1}
+                            // onSlideChange={() => console.log('slide change')}
+                            // onSwiper={(swiper) => console.log(swiper)}
+                        >
+                            <SwiperSlide className="slide" >
+                                <div className="title">CHOOSE CONFIDENTLY</div>
+                                <div className="subtitle">A GREAT PLACE TO WORK A GREAT PLACE TO RECIEVE CARE</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae, dolorem possimus magnam adipisci expedita odio saepe nisi fuga inventore.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="title">CHOOSE CONFIDENTLY</div>
+                                <div className="subtitle">A GREAT PLACE TO WORK A GREAT PLACE TO RECIEVE CARE</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae, dolorem possimus magnam adipisci expedita odio saepe nisi fuga inventore.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="title">CHOOSE CONFIDENTLY</div>
+                                <div className="subtitle">A GREAT PLACE TO WORK A GREAT PLACE TO RECIEVE CARE</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae, dolorem possimus magnam adipisci expedita odio saepe nisi fuga inventore.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="title">CHOOSE CONFIDENTLY</div>
+                                <div className="subtitle">A GREAT PLACE TO WORK A GREAT PLACE TO RECIEVE CARE</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae, dolorem possimus magnam adipisci expedita odio saepe nisi fuga inventore.</div>
+                            </SwiperSlide>
+                        </Swiper>
+                        <div className="nav">
+                            <button className="prev .swiper-btn-prev" >&lt;</button>
+                            <button className="next  .swiper-btn-next">&gt;</button>
+                        </div>
+                    </div>
                     <div className="img"><img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9jdG9yc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" /></div>
                     <div className="img"><img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRvY3RvcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" /></div>
                 </div>
@@ -92,7 +131,42 @@ export default function Home(){
                     <div className="title">Latest tips & News</div>
                     <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis accusantium voluptatibus enim labore sequi quis repellendus similique officiis. Harum!</div>
                     <div className="slider">
-
+                        <Swiper
+                            modules={[Navigation]}
+                            spaceBetween={50}
+                            slidesPerView={3}
+                        >
+                            <SwiperSlide className="slide" >
+                                <div className="date">June 11, 2023</div>
+                                <div className="title">integrative mdeicine and cancer treatment</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="date">June 11, 2023</div>
+                                <div className="title">integrative mdeicine and cancer treatment</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="date">June 11, 2023</div>
+                                <div className="title">integrative mdeicine and cancer treatment</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="date">June 11, 2023</div>
+                                <div className="title">integrative mdeicine and cancer treatment</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="date">June 11, 2023</div>
+                                <div className="title">integrative mdeicine and cancer treatment</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae.</div>
+                            </SwiperSlide>
+                            <SwiperSlide className="slide" >
+                                <div className="date">June 11, 2023</div>
+                                <div className="title">integrative mdeicine and cancer treatment</div>
+                                <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione totam voluptatem, minus natus molestiae aspernatur velit nobis officia quae.</div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
                 <div className="section6">
@@ -110,7 +184,7 @@ export default function Home(){
                             <div className="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque id quos, nobis possimus minus ratione.</div>
                         </div>
                         <div className="card">
-                            lrem50
+                            lorem150
 
                         </div>
                     </div>
