@@ -55,7 +55,7 @@ export default function Form(props){
        userForm.comment = e.target.value ;
     }
 
-    console.log(validate())
+    
     return (
     <form ref={formRef} className="contact-form" onSubmit={sendEmail}  >
         {props.title && <div className="subtitle" >We are here for you</div>}

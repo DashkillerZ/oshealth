@@ -86,18 +86,18 @@ export default function Footer(options) {
                 <div className="fourth timings">
                     <div className="time"><img src={time} alt="" /></div>
                     <div className="list">
-                        <div>Monday:08am - 12pm</div>
-                        <div>Tuesday:01am - 5pm</div>
-                        <div>Wednesday:Free day</div>
-                        <div>Thursday:08am - 12pm</div>
-                        <div>Friday:08am - 12pm</div>
-                        <div>Saturday - Sunday:Closed</div>
+                        <div>Monday <span>08am - 12pm</span></div>
+                        <div>Tuesday <span>01am - 5pm</span></div>
+                        <div>Wednesday <span>Free day</span></div>
+                        <div>Thursday <span>08am - 12pm</span></div>
+                        <div>Friday <span>08am - 12pm</span></div>
+                        <div>Saturday - Sunday <span>Closed</span></div>
                     </div>
                     <a className="make-an-appoinment">Make an Appointment</a>
                 </div>
             </div>
             <div className="bottom">
-                    <div className="left">&#169; 2022 OneSmarter Interactive, All Rights Reserved</div>
+                    <div className="left">&#169;&nbsp;2022&nbsp;OneSmarter&nbsp;Interactive, All&nbsp;Rights&nbsp;Reserved</div>
                     <div className="right">
                         <a href="">HOME</a>
                         <a href="">ABOUT US</a>

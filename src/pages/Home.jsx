@@ -18,7 +18,9 @@ import "swiper/css/navigation"
 export default function Home(){
     return(
         <div className="home">
-            <Slider/>
+            <div className="section0">
+                <Slider/>
+            </div>
             <div className="main">
                 <div className="section1">
                     <div className="section-inner">
@@ -59,8 +61,6 @@ export default function Home(){
                             modules={[Navigation]}
                             spaceBetween={50}
                             slidesPerView={1}
-                            // onSlideChange={() => console.log('slide change')}
-                            // onSwiper={(swiper) => console.log(swiper)}
                         >
                             <SwiperSlide className="slide" >
                                 <div className="title">CHOOSE CONFIDENTLY</div>
@@ -132,7 +132,7 @@ export default function Home(){
                     <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis accusantium voluptatibus enim labore sequi quis repellendus similique officiis. Harum!</div>
                     <div className="slider">
                         <Swiper
-                            modules={[Navigation]}
+                            modules={[Navigation]}                            
                             spaceBetween={50}
                             slidesPerView={3}
                         >

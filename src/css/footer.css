@@ -1,6 +1,5 @@
 .footer{
     background: var(--subprimary);
-    /* min-height:30vh ; */
     padding-top: 0.1px;
 }
 .footer .bottom{
@@ -9,6 +8,7 @@
     border-top: 1px solid #3a536c;
     display: flex;
     height: 40px;
+    font-size: 0.9rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -17,9 +17,9 @@
 }
 .footer .bottom .right a{
     color: var(--text-light);
-    margin: 0 5px;
+    margin: 0 3px;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     text-decoration: none;
 }
 .footer .bottom .right img{
@@ -51,7 +51,8 @@
 
 .footer .top{
     display: grid;
-    margin: 50px 5vw;
+    margin: 50px 5%;
+    align-items: start;
     grid-template-columns: repeat(auto-fit,calc(100% / 4));
 }
 .footer .top >div {
@@ -99,17 +100,17 @@
     width: 2.5rem;
     padding-right:12px;
 }
-.footer .list{
+.footer .fourth .list{
     margin: 0;padding: 0;
 }
 
 .footer .make-an-appoinment{
-    margin: 10px 17%;
     width: fit-content;
+    margin: 8px auto 30px auto;
+    display: block;
     background: var(--primary);
     color: #fff;
     padding: 8px 8px;
-
 }
 .footer .list >div:last-child{border-bottom:none ;}
 .footer .top div:nth-child(2) .flex{
@@ -162,8 +163,38 @@
     display: flex;
     padding: 0 4px;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     border-bottom: 1px solid #44576B;
     margin: 0 20px;
     font-size: 0.95rem;
+}
+.fourth .time img{
+    margin: 0;
+    padding: 2px !important;
+}
+.footer .fourth {
+    margin: 0 20px;
+}
+@media screen and (max-width:850px) {
+    .footer .top{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .footer .bottom{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:550px) {
+    .footer .top{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr!important;
+    }
+
+    .footer .fourth{
+        width: 90%;
+    }
+    .footer .bottom .left{
+        text-align: center;
+    }
 }
