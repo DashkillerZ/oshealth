@@ -12,8 +12,8 @@ export default function Slider(props){
             title:"Healthy Lifestyle",
             description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem temporibus accusantium sunt neque architecto magnam omnis eveniet modi ducimus cupiditate!",
             buttons:<div>
-                <a className="btn1">purchase</a>
-                <a className="btn2">read more</a>
+                <a href="/" className="btn1">purchase</a>
+                <a href="/" className="btn2">read more</a>
             </div>,
 
     
@@ -23,8 +23,8 @@ export default function Slider(props){
             title:"the best doctors",
             description:"Ipsum dolor sit amet consectetur, adipisicing elit. Quidem temporibus accusantium sunt neque architecto magnam omnis eveniet modi ducimus cupiditate!",
             buttons:<div>
-                <a className="btn1">purchase</a>
-                <a className="btn2">read more</a>
+                <a href="/" className="btn1">purchase</a>
+                <a href="/" className="btn2">read more</a>
             </div>,
     
         },
@@ -33,8 +33,8 @@ export default function Slider(props){
             title:"modern medicine",
             description:"adipisicing elit. Quidem temporibus accusantium sunt neque architecto magnam omnis eveniet modi ducimus cupiditate!",
             buttons:<div>
-                <a className="btn1">purchase</a>
-                <a className="btn2">read more</a>
+                <a href="/" className="btn1">purchase</a>
+                <a href="/" className="btn2">read more</a>
             </div>,
     
         },
@@ -43,8 +43,8 @@ export default function Slider(props){
             title:"modern medicals",
             description:"temporibus accusantium sunt neque architecto magnam omnis eveniet modi ducimus cupiditate!temporibus accusantium sunt neque architecto magnam omni.",
             buttons:<div>
-                <a className="btn1">purchase</a>
-                <a className="btn2">read more</a>
+                <a href="/" className="btn1">purchase</a>
+                <a href="/" className="btn2">read more</a>
             </div>,
     
         },

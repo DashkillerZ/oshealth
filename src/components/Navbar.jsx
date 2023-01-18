@@ -1,15 +1,4 @@
-import logo from "../static/logo.svg";
-import location from "../static/location.svg";
-import mobile from "../static/mobile.svg";
-import pointer from "../static/pointer.svg";
-import time from "../static/time.svg";
-import facebook from "../static/facebook.svg";
-import twitter from "../static/twitter.svg";
-import linkedin from "../static/linkedin.svg";
-import googlePlus from "../static/googleplus.svg";
-import angleDown from "../static/angleDown.svg";
-import search from "../static/search.svg";
-import bag from "../static/bag.svg";
+import Static from "../static/Static.js";
 import "../css/navbar.css";
 import Form from "../components/Form";
 import { Link } from "react-router-dom";
@@ -77,7 +66,7 @@ export default function Navbar(){
         <div className="navbar">
             <div className="top">
                 <Link to="/" style={{textDecoration:"none"}} className="logo left  ">
-                    <img src={logo} alt="" />
+                    <img src={Static.logo} alt="" />
                     <span>
                         <div>ONESMARTER</div>
                         <div>HEALTH</div>
@@ -85,35 +74,35 @@ export default function Navbar(){
                 </Link>
                 <div className="right">
                     <div className="status">
-                        <img src={time} alt="" />
+                        <img src={Static.time} alt="" />
                         <span>
                             <div>Monday - Friday , 08:00 - 20:00</div>
                             <div>Saturday and Sunday - CLOSED </div>
                         </span>
                     </div>
                     <div className="contact-info">
-                        <img src={mobile} alt="" />
+                        <img src={Static.mobile} alt="" />
                         <span>
                             <div>+ 0800 2466 7921</div>
                             <div>mediagroup@qode.com</div>
                         </span>
                     </div>
                     <div className="location">
-                        <img src={location} alt="" />
+                        <img src={Static.location} alt="" />
                         <span>
                             <div>34th Avenue</div>
                             <div>New York, W2 3XE</div>
                         </span>
                     </div>
                     <div className="social">
-                        <img src={pointer} alt="" />
+                        <img src={Static.pointer} alt="" />
                         <span>
                             <div>Follow Us</div>
                             <div className="social-nav" >
-                                <a href="/"><img src={facebook} alt="" /></a>
-                                <a href="/"><img src={twitter} alt="" /></a>
-                                <a href="/"><img src={linkedin} alt="" /></a>
-                                <a href="/"><img src={googlePlus} alt="" /></a>
+                                <a href="/"><img src={Static.facebook} alt="" /></a>
+                                <a href="/"><img src={Static.twitter} alt="" /></a>
+                                <a href="/"><img src={Static.linkedin} alt="" /></a>
+                                <a href="/"><img src={Static.googlePlus} alt="" /></a>
                             </div>
                         </span>
                     </div>
@@ -130,9 +119,9 @@ export default function Navbar(){
                     <div className="nav-elements">SHOP</div>
                 </div>
                 <div className="right">
-                    <div className="lang flex">EN <img src={angleDown} alt="" /></div>
-                    <div className="search flex"><img src={search} alt="Search" /></div>
-                    <div className="bag flex" data-count="5" ><img src={bag} alt="" /></div>
+                    <div className="lang flex">EN <img src={Static.angleDown} alt="" /></div>
+                    <div className="search flex"><img src={Static.search} alt="Search" /></div>
+                    <div className="bag flex" data-count="5" ><img src={Static.bag} alt="" /></div>
                     <div className="appointment flex" ref={modalButtonRef} >BOOK&nbsp;APPOINMENT</div>
                     
                     <div className={menuAction?"menu-btn active flex":"menu-btn flex"} onClick={()=>setMenuAction(!menuAction)} >
@@ -164,35 +153,35 @@ export default function Navbar(){
             <div className="nav-el">SHOP</div>
             <div className="right">
                 <div className="status">
-                    <img src={time} alt="" />
+                    <img src={Static.time} alt="" />
                     <span>
                         <div>Monday - Friday , 08:00 - 20:00</div>
                         <div>Saturday and Sunday - CLOSED </div>
                     </span>
                 </div>
                 <div className="contact-info">
-                    <img src={mobile} alt="" />
+                    <img src={Static.mobile} alt="" />
                     <span>
                         <div>+ 0800 2466 7921</div>
                         <div>mediagroup@qode.com</div>
                     </span>
                 </div>
                 <div className="location">
-                    <img src={location} alt="" />
+                    <img src={Static.location} alt="" />
                     <span>
                         <div>34th Avenue</div>
                         <div>New York, W2 3XE</div>
                     </span>
                 </div>
                 <div className="social">
-                    <img src={pointer} alt="" />
+                    <img src={Static.pointer} alt="" />
                     <span>
                         <div>Follow Us</div>
                         <div className="social-nav" >
-                            <a href="/"><img src={facebook} alt="" /></a>
-                            <a href="/"><img src={twitter} alt="" /></a>
-                            <a href="/"><img src={linkedin} alt="" /></a>
-                            <a href="/"><img src={googlePlus} alt="" /></a>
+                            <a href="/"><img src={Static.facebook} alt="" /></a>
+                            <a href="/"><img src={Static.twitter} alt="" /></a>
+                            <a href="/"><img src={Static.linkedin} alt="" /></a>
+                            <a href="/"><img src={Static.googlePlus} alt="" /></a>
                         </div>
                     </span>
                 </div>

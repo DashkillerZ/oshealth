@@ -1,21 +1,15 @@
 
 import Slider from "../components/Slider";
 import  "../css/home.css";
-import cardicClinic from "../static/cardic-clinic.png";
-import dentalSurgery from "../static/dental-surgery.png";
-import gynologicalClinic from "../static/gyneological-clinic.png";
-import preciseDiagnosis from "../static/precise-diagnosis.png";
-import primaryHealthCare from "../static/primary-health-care.png";
-import rehabCenter from "../static/rehab-center.png";
-
+import Static from "../static/Static.js";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { Navigation } from 'swiper';
 import 'swiper/css';
-import "swiper/css/navigation"
+import "swiper/css/navigation";
 
 
 export default function Home(){
+    console.log(Static);
     return(
         <div className="home">
             <div className="section0">
@@ -96,32 +90,32 @@ export default function Home(){
                     <div className="desc">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquetenean. Cum sociis Theme natoque penatibus et magnis dis parturient nascetur ridiculus mus</div>
                     <div className="grid">
                         <div className="container">
-                            <img src={primaryHealthCare} alt="" />
+                            <img src={Static.primaryHealthCare} alt="" />
                             <div className="title">PRIMARY HEALTH CARE</div>
                             <div className="desc">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudi</div>
                         </div>
                         <div className="container">
-                            <img src={gynologicalClinic} alt="" />
+                            <img src={Static.gynologicalClinic} alt="" />
                             <div className="title">GYNEOLOGICAL CLINIC</div>
                             <div className="desc">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudi</div>
                         </div>
                         <div className="container">
-                            <img src={preciseDiagnosis} alt="" />
+                            <img src={Static.preciseDiagnosis} alt="" />
                             <div className="title">PRECISE DIAGNOSIS</div>
                             <div className="desc">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudi</div>
                         </div>
                         <div className="container">
-                            <img src={cardicClinic} alt="" />
+                            <img src={Static.cardicClinic} alt="" />
                             <div className="title">CARDIAC CLINIC</div>
                             <div className="desc">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudi</div>
                         </div>
                         <div className="container">
-                            <img src={dentalSurgery} alt="" />
+                            <img src={Static.dentalSurgery} alt="" />
                             <div className="title">DENTAL SURGERY</div>
                             <div className="desc">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudi</div>
                         </div>
                         <div className="container">
-                            <img src={rehabCenter} alt="" />
+                            <img src={Static.rehabCenter} alt="" />
                             <div className="title">REHABILITATION CENTER</div>
                             <div className="desc">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudi</div>
                         </div>

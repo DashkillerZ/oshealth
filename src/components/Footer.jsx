@@ -1,13 +1,6 @@
 import "../css/footer.css";
-import logo from "../static/logo.svg";
-import facebook from "../static/facebook.svg";
-import twitter from "../static/twitter.svg";
-import linkedin from "../static/linkedin.svg";
-import googlePlus from "../static/googleplus.svg";
+import Static from "../static/Static.js";
 import { Link } from "react-router-dom";
-import location from "../static/location.svg";
-import mobile from "../static/mobile.svg";
-// import pointer from "../static/pointer.svg";
 import time from "../static/time.svg";
 export default function Footer(options) {
     return(
@@ -15,7 +8,7 @@ export default function Footer(options) {
             <div className="flex top">
                 <div className="first">
                     <Link to="/" style={{textDecoration:"none"}} className="logo">
-                        <img src={logo} alt="" />
+                        <img src={Static.logo} alt="" />
                         <span>
                             <div>ONESMARTER</div>
                             <div>HEALTH</div>
@@ -25,14 +18,14 @@ export default function Footer(options) {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum suscipit necessitatibus doloribus sequi ipsum. Laborum minus ex reprehenderit at!
                     </div>
                     <div className="contact-info">
-                        <img src={mobile} alt="" />
+                        <img src={Static.mobile} alt="" />
                         <span>
                             <div>+ 0800 2466 7921</div>
                             <div>mediagroup@qode.com</div>
                         </span>
                     </div>
                     <div className="location">
-                        <img src={location} alt="" />
+                        <img src={Static.location} alt="" />
                         <span>
                             <div>34th Avenue</div>
                             <div>New York, W2 3XE</div>
@@ -43,18 +36,18 @@ export default function Footer(options) {
                     <div className="title">Latest Tweets</div>
                     <div>
                         <div className="flex">
-                            <img src={twitter} alt="" />
+                            <img src={Static.twitter} alt="" />
                             <div>
                             @aliasadadm Hi @aliasadadm , can you please submit a ticket at https://t.co/JLV61aXG7d and one of our support agent… https://t.co/yk57k1S9bS
                             </div>
                         </div>
                         <div className="flex">
-                            <img src={twitter} alt="" />
+                            <img src={Static.twitter} alt="" />
                             <div>
                             @aliasadadm Hi @aliasadadm , can you please submit a ticket at https://t.co/JLV61aXG7d and one of our support agent… https://t.co/yk57k1S9bS
                             </div>
                         </div><div className="flex">
-                            <img src={twitter} alt="" />
+                            <img src={Static.twitter} alt="" />
                             <div>
                             @aliasadadm Hi @aliasadadm , can you please submit a ticket at https://t.co/JLV61aXG7d and one of our support agent… https://t.co/yk57k1S9bS
                             </div>
@@ -93,7 +86,7 @@ export default function Footer(options) {
                         <div>Friday <span>08am - 12pm</span></div>
                         <div>Saturday - Sunday <span>Closed</span></div>
                     </div>
-                    <a className="make-an-appoinment">Make an Appointment</a>
+                    <a href="/" className="make-an-appoinment">Make an Appointment</a>
                 </div>
             </div>
             <div className="bottom">
@@ -104,10 +97,10 @@ export default function Footer(options) {
                         <a href="">BLOG</a>
                         <a href="">SHOP</a>
                         <a href="">CONTACT</a>
-                        <a href=""><img src={facebook} alt="" /></a>
-                        <a href=""><img src={twitter} alt="" /></a>
-                        <a href=""><img src={linkedin} alt="" /></a>
-                        <a href=""><img src={googlePlus} alt="" /></a>
+                        <a href=""><img src={Static.facebook} alt="" /></a>
+                        <a href=""><img src={Static.twitter} alt="" /></a>
+                        <a href=""><img src={Static.linkedin} alt="" /></a>
+                        <a href=""><img src={Static.googlePlus} alt="" /></a>
                     </div>
             </div>
         </div>

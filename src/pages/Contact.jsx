@@ -1,6 +1,5 @@
 import Form from "../components/Form";
-import location from "../static/location.svg";
-import mobile from "../static/mobile.svg";
+import Static from "../static/Static.js"
 import "../css/contact.css";
 export default function Contact(){
     return ( 
@@ -13,14 +12,14 @@ export default function Contact(){
                     <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit odit dolore mollitia repellendus ex natus necessitatibus, voluptatem assumenda beatae dolorem, esse rem officia debitis alias est cum totam ipsa quas illum dolorum laborum enim numquam. Libero nesciunt iure voluptates dolorem voluptatum sunt a necessitatibus, dolore quod corporis similique nostrum! Voluptatem?</div>
                     <div>
                         <div className="contact-info">
-                            <img src={mobile} alt="" />
+                            <img src={Static.mobile} alt="" />
                             <span>
                                 <div>+ 0800 2466 7921</div>
                                 <div>mediagroup@qode.com</div>
                             </span>
                         </div>
                         <div className="location">
-                            <img src={location} alt="" />
+                            <img src={Static.location} alt="" />
                             <span>
                                 <div>34th Avenue</div>
                                 <div>New York, W2 3XE</div>

@@ -1,5 +1,5 @@
 import "../css/form.css";
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 
