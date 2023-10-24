@@ -1,5 +1,5 @@
 import "../css/slider.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function Slider(props){
     let interval = 8;
@@ -65,7 +65,13 @@ export default function Slider(props){
             setCurrentSlide(0);
         }
     }
-    setTimeout(nextSlide,interval*1000);
+    useEffect(()=>{
+        const interval = setInterval(nextSlide,interval*1000);
+        return()=>{
+            clearInterval(interval)
+        }
+
+    })
     // let counter =0;
     // function animate(){
     //     requestAnimationFrame(animate);
